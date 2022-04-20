@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    height: 130px;
+    width: 100%;
+    padding: 0;
+    background-color: rgb(14, 60, 78);
+    position: relative;
+}
+h1 {
+    font-size: 40px;
+    font-style: oblique;
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+    color: rgb(5, 214, 200);
+    background-color: rgb(0, 38, 57);
+    padding: 10px 10px 15px 60px;
+    display: inline-block;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.worksection {
+    display: flex; 
+    flex-direction: row;
+    margin-top: 70px;
+    position: relative;
+}
+.nav-links{
+    padding: 28px 0;
+}
+
+.nav-links li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.nav-links li a{
+color: aqua;
+padding: 30px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-style: italic;
+font-size:x-large;
+font-weight: bolder;
+}
+.nav-links li a ::after {
+    content: "";
+    background-color:rgb(14, 60, 78);
+    width: 100%;
+    height: 3.2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.imgl {
+    width: 100%;
+    height: 200px;
+}
+.banner {
+    position: relative;
+    display: block;
+    background-image: url(../assets/Soccer.jpg)
+}
+h2{
+    display: inline-block;
+    position: relative;
+    color: rgb(5, 214, 200);
+    background-color: rgb(0, 49, 61);
+    padding: 10px 30px 10px 10px;
+    font-size: 40px;
+    border: rgba(2, 1, 0, 0.826);
+    border-radius: 4px;
+    left: 85%;
+    margin-top: 10px;
+}
+h3 {
+    display: inline-block;
+    border-right: 6px rgb(0, 49, 61) solid;
+    font-size: 40px;
+    margin-left: 70px;
+    margin-right: 30px;
+    padding-right: 20px;
+}
+.banner{
+    position:relative;
+    display: block;
+    background-image:url(../assets/UFO\ Picture.webp);
+    background-size:cover;
+}
+
+@media  and (max-width:600px){
+    .nav-links{
+        
+    }
+}
+section {
+    display: flex;
+    flex-direction: row;
+}
+.formating {
+    flex-direction: row;
+    margin-top: 70px;
+    position: relative;
+    display: flex;
+}
+h4 {
+    font-size: 69px;
+    padding-left: 20px;
+    margin-right: 0;
+    padding-right: 20px;
+    border-right: 6px rgb(14, 60, 78) solid;
+}
+
+
+
+ span{
+    font: bold;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(5, 214, 200);
+    padding: 8px 8px 8px 8px;
+    background-color: rgb(14, 60, 78);
+    opacity: 1;
+    display: inline-block;
+    margin-top: 20%;
+    margin-left: 0%;
+}
+
+.caption {
+    border: 6px rgb(14, 60, 78) solid;
+    width: 87%;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: rgb(5, 214, 200);
+    height: 400px;
+    background-image: url(../assets/Goat.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .7;
+}
+.outside {
+    border: 6px rgb(14, 60, 78) solid;
+    width: 90%;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 400px;
+    display: flex;
+}
+.inside {
+    border: 6px rgb(14, 60, 78) solid;
+    width: 37%;
+    margin-left: 30%;
+    margin-right: 10%;
+    height: 170px;
+    margin: 40px 81px 30px 40px;
+    display: inline-flex;
+    background-image: url(../assets/ronaldo-top-goal-scorer-awards.jpg);
+    opacity: .7;
+    background-size: 100% 100%;
+}
+.FormatColumn {
+    flex-direction: column;
+    width: 100%;
+}
+#passer {
+    background-image: url(../assets/messi\ bad.jfif);
+    background-size: 100% 100%;
+    background-repeat: 0;
+}
+#dribble {
+    background-image: url(../assets/ronaldino.webp);
+    background-repeat: 0;
+    background-size: 100% 100%;
+}
+#MVP {
+    background-image: url(../assets/CR7.jpg);
+    background-size: 100% 100%;
+}
+.caption:hover {
+    opacity: 1;
+}
+.inside:hover {
+    opacity: 1;
+}
+h5 {
+    display: inline-block;
+    font-size: 30px;
+    padding-left: 10px;
+    margin-right: 0;
+    padding-right: 15px;
+    right: 20px;
+    margin-top: 10px;
+}
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    list-style: none;
+
+}
+
+@media screen and (max-width:600px) {
+    .worksection{
+        display:flex;
+        flex-direction:column;
+        font-size: 15px;
+        overflow: hidden;
+    
+    }
+
+    .outside{
+        flex-shrink: 1 0 0;
+    }
+    .inside {
+        flex-shrink: 1 0 0;
+    }
+    .banner {
+        width: 100%;
+    }
+    h2 {
+        left: 50%;
+    }
+}
+h6 {
+    display: inline-block;
+    font-size: 30px;
+    border-right: 6px rgb(14, 60, 78) solid ;
+    padding-left: 20px;
+    margin-right: 0;
+    padding-right: 15px;
+    right: 20px;
+    margin-top: 10px;
+}
