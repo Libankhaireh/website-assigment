@@ -95,11 +95,11 @@ h3 {
     background-size:cover;
 }
 
-@media  and (max-width:600px){
+/* @media  and (max-width:600px){
     .nav-links{
         
     }
-}
+} */
 section {
     display: flex;
     flex-direction: row;
